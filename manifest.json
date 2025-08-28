@@ -1,0 +1,28 @@
+{
+  "name": "WBSeller SPP Export",
+  "version": "1.0.2",
+  "manifest_version": 3,
+  "permissions": [
+    "webRequest",
+    "cookies",
+    "downloads",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://seller.wildberries.ru/*",
+    "https://discounts-prices.wildberries.ru/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://seller.wildberries.ru/discount-and-prices*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": { "128": "icon128.png" }
+}
