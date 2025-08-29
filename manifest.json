@@ -1,13 +1,10 @@
 {
   "name": "WBSeller SPP Export",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 3,
   "permissions": [
     "webRequest",
-    "cookies",
-    "downloads",
-    "scripting",
-    "tabs"
+    "cookies"
   ],
   "host_permissions": [
     "https://seller.wildberries.ru/*",
