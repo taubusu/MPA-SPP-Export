@@ -1,6 +1,6 @@
 {
-  "name": "WBSeller SPP Export",
-  "version": "1.0.3",
+  "name": "MPA SPP Export",
+  "version": "1.0.3.1",
   "manifest_version": 3,
   "permissions": [
     "webRequest",
